@@ -1,0 +1,23 @@
+[{
+    "id": 1,
+    "name" : "Anniversary",
+    "img_url": "https://4.imimg.com/data4/IR/TC/MY-12958090/anniversary-event-management-500x500.jpeg"
+},
+{
+    "id": 2,
+    "name" : "Birthday",
+    "img_url": "https://media.gettyimages.com/photos/indian-boy-blowing-out-candles-during-birthday-party-picture-id148193932"
+
+},
+{
+    "id": 3,
+    "name" : "Wedding",
+    "img_url": "http://www.storyhippo.com/wp-content/uploads/2016/11/Indian-Wedding.jpg"
+
+},
+{
+    "id": 4,
+    "name" : "Conference",
+    "img_url": "http://blog.eventvalue.com/wp-content/uploads/2018/07/blog-event2.jpg"
+
+}]
