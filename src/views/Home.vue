@@ -1,11 +1,11 @@
 <template>
   <div class="home">
-    Welcome to Events App
+    Welcome to Events App!
+    Attend Events under the Events Tab.
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
 
 export default {
   name: 'home',

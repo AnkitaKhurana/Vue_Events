@@ -2,10 +2,15 @@
      <div class="card">       
          <h1> {{event.name}} </h1>        
          <img :src=event.img_url class="image">  
-         <h4>Have you registetered for the event yet? {{event.attending}} </h4>
+         <h4 v-if="event.attending==-1">Current Status: None</h4>
+         <h4 v-else-if="event.attending==0">Current Status: Not Interested</h4>
+         <h4 v-else-if="event.attending==1">Current Status: Going</h4>
+         <h4 v-else>Current Status: Interested</h4>
          <p>{{event.description}}</p>
          <div class="buttons"> 
-         <button @click="register" :event=event >Register/Deregister</button>
+         <button @click="Interested" :event=event >Interested</button>
+         <button @click="Going" :event=event >Going</button>
+         <button @click="NotInterested" :event=event >Not Interested</button>
          </div>
      </div>
 </template>
@@ -36,12 +41,14 @@ export default {
     EventCard
   },
   methods: {
-    register: function() {
-      if (this.$data.event.attending == true) {
-        this.$data.event.attending = false;
-      } else {
-        this.$data.event.attending = true;
-      }
+    Interested: function() {
+        this.$data.event.attending = 2;
+    },
+     Going: function() {
+        this.$data.event.attending = 1;
+    },
+     NotInterested: function() {
+        this.$data.event.attending = 0;
     }
   }
 };

@@ -3,14 +3,14 @@
     "name" : "Anniversary",
     "description":"An anniversary is a date which is remembered or celebrated because a special event happened on that date in a previous year.",
     "img_url": "https://4.imimg.com/data4/IR/TC/MY-12958090/anniversary-event-management-500x500.jpeg",
-    "attending" : false
+    "attending" : -1
 },
 {
     "id": 2,
     "name" : "Birthday",
     "description":"The anniversary of the day on which a person was born, typically treated as an occasion for celebration and the giving of gifts.",
     "img_url": "https://media.gettyimages.com/photos/indian-boy-blowing-out-candles-during-birthday-party-picture-id148193932",
-    "attending" : false
+    "attending" : -1
 
 },
 {
@@ -18,7 +18,7 @@
     "name" : "Wedding",
     "description":"Wedding practices in different cultures.A wedding is a ceremony where two people are united in marriage. Wedding traditions and customs vary greatly between cultures, ethnic groups, religions, countries, and social classes. ",
     "img_url": "http://www.storyhippo.com/wp-content/uploads/2016/11/Indian-Wedding.jpg",
-    "attending" : false
+    "attending" : -1
 
 },
 {
@@ -26,7 +26,5 @@
     "name" : "Conference",
     "description":"A formal meeting of people with a shared interest, typically one that takes place over several days",
     "img_url": "http://blog.eventvalue.com/wp-content/uploads/2018/07/blog-event2.jpg",
-    "attending" : false
-
-
+    "attending" : -1
 }]
