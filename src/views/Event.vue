@@ -15,7 +15,6 @@
      </div>
 </template>
 
-
 <style>
 .buttons {
   display: block;
@@ -41,14 +40,17 @@ export default {
     EventCard
   },
   methods: {
-    Interested: function() {
-        this.$data.event.attending = 2;
+    Interested: function(event) {
+      if (this.$data.event.attending == 2) this.$data.event.attending = -1;
+      else this.$data.event.attending = 2;
     },
-     Going: function() {
-        this.$data.event.attending = 1;
+    Going: function() {
+      if (this.$data.event.attending == 1) this.$data.event.attending = -1;
+      else this.$data.event.attending = 1;
     },
-     NotInterested: function() {
-        this.$data.event.attending = 0;
+    NotInterested: function() {
+      if (this.$data.event.attending == 0) this.$data.event.attending = -1;
+      else this.$data.event.attending = 0;
     }
   }
 };
